@@ -19,9 +19,9 @@ function [dt, lat, lon, temperature, fmask] = getLandsatL2_SST(pathfolder, retri
 %   - fmask: <NxM double> matrix of masks generated from fmask
 %
 % examples:
-%    - [dt, lat, lon, temperature, fmask] = InvertLandsat_SST(pathfolder)
-%    - [dt, lat, lon, temperature, fmask] = InvertLandsat_SST(pathfolder, true)
-%    - [dt, lat, lon, temperature, fmask] = InvertLandsat_SST(pathfolder, false, [5 97.5])
+%    - [dt, lat, lon, temperature, fmask] = getLandsatL2_SST(pathfolder)
+%    - [dt, lat, lon, temperature, fmask] = getLandsatL2_SST(pathfolder, true)
+%    - [dt, lat, lon, temperature, fmask] = getLandsatL2_SST(pathfolder, false, [5 97.5])
 %%
 if nargin < 1
   error('Not enough input argument')
