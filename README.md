@@ -1,6 +1,6 @@
-InvertLandsat_SST
+getLandsatL2_SST
 ===
-_Invert sea surface temperature from Landsat 4, 5, 7 and 8 collection 2 level 2 images and apply masks._
+_Extract sea surface temperature from Landsat 4, 5, 7 and 8 collection 2 level 2 images and apply masks._
 
 Matlab mapping toolbox required.
 

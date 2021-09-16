@@ -1,9 +1,9 @@
-function [dt, lat, lon, temperature, fmask] = InvertLandsat_SST(pathfolder, retrieve_land, prc_lim)
+function [dt, lat, lon, temperature, fmask] = getLandsatL2_SST(pathfolder, retrieve_land, prc_lim)
 % author: Guillaume Bourdin
 % created: April 12, 2021
 % MIT License
 %%
-% Invert sea surface temperature from Landsat 4, 5, 7 and 8 collection 2 level 2 images and apply masks
+% Extract sea surface temperature from Landsat 4, 5, 7 and 8 collection 2 level 2 images and apply masks
 %
 % INPUT:
 %   - pathfolder: Landsat-8 folder path <1xM char>
