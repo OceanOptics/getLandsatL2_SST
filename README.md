@@ -25,7 +25,11 @@ Follow instructions: https://cosmojiang.wordpress.com/2018/04/02/matlab-geotiffr
     [dt, lat, lon, temperature, fmask] = InvertLandsat_SST(pathfolder, true)
     [dt, lat, lon, temperature, fmask] = InvertLandsat_SST(pathfolder, false, [5 97.5])
 
+Example of LANDSAT-8 image without applying any land mask:
+
 ![alt text](https://github.com/OceanOptics/InvertLandsat_SST/blob/main/L8_image_with_land.jpg?raw=true)
+
+Example of the same LANDSAT-8 image applying the land mask of QA band:
 
 ![alt text](https://github.com/OceanOptics/InvertLandsat_SST/blob/main/L8_image_without_land.jpg?raw=true)
 
