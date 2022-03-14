@@ -1,6 +1,6 @@
 getLandsatL2_SST
 ===
-_Extract sea surface temperature from Landsat 4, 5, 7 and 8 collection 2 level 2 images and apply masks._
+_Extract sea surface temperature from Landsat 4, 5, 7, 8 and 9 collection 2 level 2 images and apply masks._
 
 Matlab mapping toolbox required.
 
@@ -8,7 +8,7 @@ Matlab mapping toolbox required.
 Follow instructions: https://cosmojiang.wordpress.com/2018/04/02/matlab-geotiffread-for-multiple-layers/
 
 ### INPUT:  
-  - **`pathfolder`**: Landsat-8 folder path <1xM char>  
+  - **`pathfolder`**: Landsat scene folder path <1xM char>  
 ### Optional input:  
   - **`retrieve_land`**: < 1x1 boolean > retrieve land, small lake and river temperature; default = false  
   - **`prc_lim`**: < 1x2 double > percentils to remove (%); default = [2.5 99]  
