@@ -55,7 +55,7 @@ spacecraft = parseMTL(MTLfile, 'SPACECRAFT_ID =');
 switch spacecraft
   case {'LANDSAT_4','LANDSAT_5','LANDSAT_7'}
     STBAND = '6';
-  case 'LANDSAT_8'
+  case {'LANDSAT_8','LANDSAT_9'}
     STBAND = '10';
   otherwise
     error('Spacecraft %s not known', spacecraft)
