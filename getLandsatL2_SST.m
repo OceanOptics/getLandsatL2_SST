@@ -42,8 +42,9 @@ warning('off')
 
 % list files in directory
 [~, filename] = fileparts(pathfolder);
-foo = {dir(fullfile(pathfolder, '*L2*')).name}'; % (1:end-4)
-foo = cellfun(@(x) [pathfolder filesep x], foo, 'un', 0); % (1:end-4)
+% foo = {dir(fullfile(pathfolder, '*L2*')).name}';
+foo = struct2table(dir(fullfile(pathfolder, '*L2*'))).name;
+foo = cellfun(@(x) [pathfolder filesep x], foo, 'un', 0);
 
 % read MTL file
 MTLfile = fileread([foo{contains(foo, '_MTL.txt')}]);
